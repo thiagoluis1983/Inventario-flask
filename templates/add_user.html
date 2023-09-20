@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="row">
+    <div class="tabela">
+        <h3>CADASTRE</h3><hr>
+        <form method="post" action="{{url_for('add_user')}}">
+            <div class="form-group">
+                <label>Regional</label>
+                <input type="text" name="regional" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Cidade</label>
+                <input type="text" name="cidade" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Local</label>
+                <input type="text" name="local" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Dispositivo</label>
+                <input type="text" name="device" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label>ServiceTag</label>
+                <input type="text" name="tag" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Usuario</label>
+                <input type="text" name="user" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label>E-mail</label>
+                <input type="text" name="email" required class="form-control">
+            </div>
+        </br>
+            <input type="submit" value="Adicionar" class="btn btn-primary">
+        </form>
+    </div>
+
+</div>
+
+{% endblock %}
